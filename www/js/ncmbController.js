@@ -1,7 +1,7 @@
 // This is a JavaScript file
 var ncmbController = {
-   APPLICATION_KEY: "YOUR_APPLICATION_KEY",
-   CLIENT_KEY: "YOUR_CLIENT_KEY",
+   APPLICATION_KEY: "432b2292f9ecb00a01a3e04c2b478d7c673b8ead0784077cd4e24298cde13a41",
+   CLIENT_KEY: "ea81164a2a79dd91a1de7ee86d33bf37fe4905fe7c6d73759651fe029b5ecf94",
 
     ncmb: null,
     currentUser: null,  // ログインしたユーザーのオブジェクトを格納
