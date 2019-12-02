@@ -43,6 +43,22 @@ sendScore: function(score) {
        .catch(function(err){
             console.log(err);
         });
+    
+    Score.greaterThan("score",score)
+     .count()
+     .fetchAll()
+     .then(function(scores){
+       var rank = (scores.count !== undefined) ? parseInt(scores.count) + 1 : 1;
+        if(typeof navigator.notification !== 'undefined'){
+            navigator.notification.alert(
+                "今回の順位は #" + rank + " でした！",
+                function(){},
+                "スコア送信完了！"
+                );
+        } else {
+            alert("スコア送信完了！\n今回の順位は #" + rank + " でした！");
+        }
+    })
 },
 
     // 初期化
