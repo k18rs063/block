@@ -38,7 +38,6 @@ sendScore: function(score) {
     // [3]送信処理
     scoreData.save()
         .then(function (saved) {
-            alert("スコア送信完了！");
         })
        .catch(function(err){
             console.log(err);
